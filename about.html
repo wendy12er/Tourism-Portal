@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+      
+        body {
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          line-height: 1.6;
+          color: #000000;
+          background: #98AFC7;
+      
+        }
+      
+        nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+        }
+      
+        .logo {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #333;
+          text-decoration: none;
+        }
+      
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+        }
+      
+        li {
+          margin-left: 2rem;
+        }
+      
+        li:first-child {
+          margin-left: 0;
+        }
+      
+        a {
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      
+        a:hover {
+          color: #008080;
+        }
+      
+        header {
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+        }
+      
+        nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+        }
+      
+        .logo {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #474F7A;
+          text-decoration: none;
+        }
+      
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+        }
+      
+        li {
+          margin-left: 2rem;
+        }
+      
+        li:first-child {
+          margin-left: 0;
+        }
+      
+        a {
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      
+        a:hover {
+          color: #008080;
+        }
+      
+        .hero {
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: #E5E4E2;
+      
+        }
+      
+        .hero h1 {
+          font-size: 4rem;
+          color: #008080;
+          margin-bottom: 1rem;
+      
+        }
+      
+        .hero p {
+          font-size: 1.5rem;
+          color: #2f4f4f;
+          margin-bottom: 2rem;
+        }
+      
+      
+      
+        .btn {
+          display: inline-block;
+          padding: 1rem 2rem;
+          background-color: #008080;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-decoration: none;
+          transition: background-color 0.2s ease-in-out;
+        }
+      
+        .btn:hover {
+          background-color: #006666;
+        }
+      
+        .destinations {
+          padding: 5rem 2rem;
+          text-align: center;
+          background-color: #ffe6e6;
+        }
+      
+        .destinations h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+      
+        .cards {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      
+        .card {
+          width: 30%;
+          margin-bottom: 2rem;
+        }
+      
+        .card img {
+          width: 50%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      
+        .card h3 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-top: 1rem;
+        }
+      
+        .accommodation {
+          background-color: #ffffff;
+          padding: 5rem 2rem;
+          text-align: center;
+        }
+      
+        .accommodation h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+      
+        .accommodation p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+      
+        .transportation {
+          background-color: #ffe6e6;
+          padding: 5rem 2rem;
+          text-align: center;
+        }
+      
+        .transportation h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+      
+        .transportation p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+      
+        .about {
+          background-color: #7E6363;
+          padding: 6rem 2rem;
+          text-align: center;
+          font-size: 20px;
+        }
+      
+        .about h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+      
+        .about p {
+          font-size: 1.3rem;
+          margin-bottom: 2rem;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+      
+    
+      
+        footer {
+          background-color: #000000;
+          color: #fff;
+          padding: 1rem;
+          text-align: center;
+          width: 100vw;
+          object-fit: fill;
+      
+        }
+    </style>
+<main>
+  <header>
+    <nav>
+        <a href="#" class="logo">Dauin.Neg</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="accomodation.html">Accommodation</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+</main>
+ 
+<main>
+<br></br>
+<section class="about">
+    <h2>Brief History of Dauin Negros Oriental</h2> <br><br>
+    <img src="image/munic.jpeg">
+    <br><br>
+    <br>
+    <p> <strong>Dauin</strong> is a town in the province of Negros. Negros Island, divided into Occidental and
+      Oriental, is the second largest in the Visayas region. The province is mountainous and volcanic, and its
+      topography is characterized by low, grooved mountain ranges, which mostly lie close to the shoreline. Negros
+      is famously known as “Sugar Island” because more than half of its agricultural land is used for sugar cane
+      plantations. At the southern end of the province is the Cuernos de Negros (Horns of Negros) strato volcano,
+      which rises to a height of 1,864 meters. At the northern end of the province is Mount Canlaon, the highest
+      peak in the island with a height of 2,465 meters and home to an active volcano.
+
+      Across Dauin is Apo Island, which is famous for its stunning corals. Dauin itself has a stunning house reef,
+      and its beach is rich caramel brown.
+      <br><br>
+      There are more stories telling about the way the town acquired its name. The first legend is telling the story
+      of a majestic tree that was taller than all other trees in the region. The Spaniards asked the local
+      population about the tree’s name. They found out that the tree was called Calawin, and from there it comes to
+      the present name of the town, Dauin. The second story is also speaking about the Calawin tree. The legend is
+      saying that the tree was home of supernatural beings, which were called “Dawinde”. Those beings helped anyone
+      in need. The third story is saying that the native people used to cultivate the lands in the region with
+      banana trees. The banana was not sold by fingers or by a bunch, but by hands, called “Lawing”.
+    </p>
+
+    <h1>The Government Officials in Dauin Negros</h1>
+    <br><br>
+    <div class="cards">
+      <div class="card">
+        <img src="image/mayor.jpeg">
+        <h3>Mayor Galicano Truita</h3>
+        <br><br>
+        <p>Galicano Truita is a Filipino politician. He is currently serving as mayor of Dauin, a municipality of
+          Negros Oriental Province in Central Visayas Region, Philippines.</p>
+      </div>
+      <div class="card">
+        <img src="image/vm.jpeg" alt="destination">
+        <h3>Vice Mayor Rodrigo Alanano</h3>
+        <br><br>
+        <p>Rodrigo Alanano is a Filipino politician. He is currently serving as Vice mayor of Dauin, a municipality
+          of Negros Oriental Province in Central Visayas Region, Philippines.</p>
+      </div>
+      <div class="card">
+        <img src="image/teves.jpeg" alt="Destination">
+        <h3>Rep. Arnolfo A. Teves</h3>
+        <br><br>
+        <p>A native of Negros Oriental, 51-year-old Arnie Teves was born on August 10, 1971, in Bayawan town. Before
+          joining the country’s roster of legislators, Teves served in different capacities as an elected public
+          official.</p>
+    </div>
+    <br><br>
+</section>
+<footer>
+    <p>&copy; 2024 Dauin Negros. All rights reserved.</p>
+</footer>
+</body>
+</html>
